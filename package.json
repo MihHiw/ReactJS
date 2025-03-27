@@ -1,0 +1,28 @@
+{
+  "name": "NEW FOLDER(2)",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "concurrently": "^8.2.2",
+    "file-saver": "^2.0.5",
+    "install": "^0.13.0",
+    "mongoose-double": "^0.0.1",
+    "multer": "^1.4.5-lts.1",
+    "npm": "^10.8.1",
+    "react-bootstrap": "^2.10.2",
+    "react-csv": "^2.2.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.11",
+    "nodemon": "^3.1.9"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "build": "npm run client:build && npm run server:build",
+    "client:build": "cd client && npm run build",
+    "server:build": "cd server && npm run build"
+  }
+}
